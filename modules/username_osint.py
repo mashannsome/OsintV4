@@ -3,8 +3,6 @@ import concurrent.futures
 import os
 from datetime import datetime
 
-username = input("Masukkan username: ").strip()
-
 # daftar situs (bisa ditambah lagi)
 sites = {
     "Telegram": f"https://t.me/{username}",
