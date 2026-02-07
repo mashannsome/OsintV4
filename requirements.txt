@@ -1,2 +1,5 @@
+requests
 telethon
 colorama
+jinja2
+rich
