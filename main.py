@@ -2,7 +2,8 @@ from core.ui import header, menu
 from modules.phone_osint import scan as phone_scan
 from modules.username_osint import scan as username_scan
 from modules.telegram_osint import telegram_lookup
-from modules.link_tracker import generate as link_generate
+from external.run_maigret import run as maigret_run
+from external.run_holehe import run as holehe_run
 from modules.inspector import run as inspector_run
 from core.reporter import save as save_report
 
@@ -27,11 +28,10 @@ elif c == "3":
     print(result)
 
 elif c == "4":
-    link = link_generate()
-    print("Tracking link:", link)
+    maigret_run()
 
 elif c == "5":
-    inspector_run()
+    holehe_run()
 
 elif c == "6":
     data = input("Masukkan data hasil scan untuk report: ")
