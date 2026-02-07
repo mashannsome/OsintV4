@@ -7,3 +7,4 @@ pip install maigret
 pip install holehe
 
 echo "[+] Install selesai"
+echo "run :  bash osintv5.sh"
