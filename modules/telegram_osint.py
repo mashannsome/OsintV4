@@ -8,7 +8,7 @@ api_id = 30687090
 api_hash = "88b84f6d22ef565ba8615a6f4d1cb504"
 
 
-def telegram_lookup(phone):
+def telegram_scan(phone):
     print(Fore.CYAN + "\n[+] Checking Telegram account..." + Style.RESET_ALL)
 
     try:
