@@ -6,7 +6,7 @@ from colorama import Fore, Style, init
 init(autoreset=True)
 
 numverify_key = ("b82a9f21278d466c5251a0f384ce432b")
-abstract_key = ("cea4b8ce437d453c968fe48390a5976e")
+abstract_key = ("0a60a9ca70bc4b7e8f898e132c42d9a2")
 
 def scan(phone):
 
@@ -19,7 +19,7 @@ def scan(phone):
     # API 1 Numverify
     if numverify_key:
         try:
-            url = f"https://api.apilayer.com/numverify/validate?number={phone}"
+            url = f"https://api.apilayer.com/number_verification/validate?number={phone}"
             headers = {"apikey": numverify_key}
 
             res = requests.get(url, headers=headers, timeout=10)
