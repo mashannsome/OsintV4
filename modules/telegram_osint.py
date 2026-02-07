@@ -2,6 +2,7 @@ from telethon.sync import TelegramClient
 from telethon.tl.functions.contacts import ImportContactsRequest, DeleteContactsRequest
 from telethon.tl.types import InputPhoneContact
 from colorama import Fore, Style
+from core.reporter import save
 import time
 
 api_id = 30687090
@@ -52,3 +53,5 @@ def telegram_lookup(phone):
     except Exception as e:
         print(Fore.RED + f"Error: {e}")
         return {"status": "ERROR"}
+        save(result, "Telegram Lookup")
+
